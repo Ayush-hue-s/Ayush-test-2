@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Urban Supermart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Create a header tag and add a logo image inside it -->
+    <header>
+    </header>
+    <!-- Create a container holding the heading, paragraph -->
+    <div class="top container ">
+        <h1>Welcome to Urban Supermart!</h1><br>
+        <p>Select your favorite produts, confirm your mobile number <br> and get them delivered 
+            <b>Straight from the Mart</b>
+        </p>
+        <br>
+        <div class="button store"> <a href="#table"> <b>What’s in store?</b> </a> </div>
+    </div>
+    <div class="table container">
+        <h2>Here’s What Is In Store Today</h2>
+        <!-- Iteration 1: Create a table to display the items avaliable in the Urban Store -->
+        <table id="table">
+            <tr>
+              <th>SELECT</th>
+              <th>ITEM</th>
+              <th>Price</th>
+              <th>Contains</th>
+              <th>Quantity</th> 
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td>Aata Maggi</td>
+                <td>INR 199/- Per Packet</td>
+                <td>2000 Calories, 3.0 g Protien,<br> 2.0 g Fat,
+                    24 g Fiber.</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="checkbox"></td>
+                <td>Parle Biscet big packet</td>
+                <td>INR 299/- Per Packet</td>
+                <td>424 Calories, 8.88 g Protien, <br>
+                    26.4 g Fiber.</td>
+                <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+               <td><input type="checkbox" name="" id="checkbox"></td>
+               <td>Marie Gold</td>
+               <td>INR 99/- Per Packet</td>
+               <td>410 Calories,
+                9.0 g Protien, <br> 2.0 g Fat, 28.0 g Fiber.</td>
+               <td><input id="quantity" type="number"></td>
+            </tr>
+            <tr>
+                 <td><input type="checkbox" name="" id="checkbox"></td>
+                 <td>White Bread</td>
+                 <td>INR 159/- Per Packet</td>
+                 <td>230 Calories,
+                    29.0 g Protien, <br>
+                    4.0 g Fat, 22.0 g Fiber.</td>
+                 <td><input id="quantity" type="number"></td>
+                </tr>
+                <tr>
+                     <td><input type="checkbox" name="" id="checkbox"></td>
+                     <td>Jim Jam </td>
+                     <td>INR 139/- Per Packet</td>
+                     <td>230 Calories,
+                        29.0 g Protien, <br>
+                        4.0 g Fat, 22.0 g Fiber.</td>
+                     <td><input id="quantity" type="number"></td>
+                    </tr>
+                    <tr>
+                         <td><input type="checkbox" name="" id="checkbox"></td>
+                         <td>Milk </td>
+                         <td>INR 129/- Per Packet</td>
+                         <td>230 Calories,
+                            29.0 g Protien, <br>
+                            4.0 g Fat, 22.0 g Fiber.</td>
+                         <td><input id="quantity" type="number"></td>
+                        </tr>
+                        <tr>
+                             <td><input type="checkbox" name="" id="checkbox"></td>
+                             <td>Parle Small Pack </td>
+                             <td>INR 89/- Per Packet</td>
+                             <td>230 Calories,
+                                29.0 g Protien, <br>
+                                4.0 g Fat, 22.0 g Fiber.</td>
+                             <td><input id="quantity" type="number"></td> 
+                            </tr>
+                            <tr>
+                                 <td><input type="checkbox" name="" id="checkbox"></td>
+                                 <td>Pringles</td>
+                                 <td>INR 108/- Per Packet</td>
+                                 <td>230 Calories,
+                                    29.0 g Protien, <br>
+                                    4.0 g Fat, 22.0 g Fiber.</td>
+                                 <td><input id="quantity" type="number"></td>
+                </tr>
+            </tr>
+        </table>
+        <br><br>
+        <p>One last step to place your order. <br> Enter your mobile number and you are done!</p>
+        <br>
+        <input type="text" id="mobile" placeholder="Enter your mobile number">
+        <br><br>
+        <div class="button" onclick="buy" id="buy-now"> <b>Buy Now</b> </div>
+        <h3 id="thanks">Thank You For Shopping With Us.</h3>
+        <br><br>
+        <footer>
+            <p>Made with :heart: by ProGrad Junior, Ananya</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById("buy-now").onclick = (evt) => {
+            document.getElementById("thanks").style.display = "inherit";
+            document.getElementById("buy-now").style.display = "none";
+        }
+    </script>
+</body>
+</html>

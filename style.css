@@ -1,0 +1,16 @@
+table,th,tr,td{
+    margin: auto;
+    border: 2px solid lightgrey;
+    border-spacing: 5px;
+    padding: 20px;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+/* Iteration 2: Style the <th> tag and add hover event to <tr> tag */
+th{
+    background-color: #27AE60;
+    color: white;
+}
+tr:hover{
+    background-color: #EDEAE4;
+}
